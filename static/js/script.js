@@ -3,6 +3,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const scrollContainer = document.querySelector('.scroll-container');
     const scrollPercent = document.getElementById('scroll-percent');
     const scrollToTop = document.getElementById('scroll-to-top');
+    const themeButton = document.querySelector('#theme');
+    const themeIcon = document.querySelector('#theme-icon');
+
+    let theme = window.localStorage.getItem('theme') || 'light';
+
+    if (theme === 'dark') {
+        themeButton.checked = true;
+    } else {
+        themeButton.checked = false;
+    }
 
     // Disable right click context menu
     document.addEventListener('contextmenu', e => e.preventDefault());
@@ -46,5 +56,23 @@ document.addEventListener('DOMContentLoaded', function () {
             scrollContainer.style.visibility = 'visible';
             scrollPercent.innerHTML = ' ' + percent + '%';
         }
-    })
+    });
+
+    themeButton.addEventListener('click', changeTheme);
+
+    function changeTheme() {
+        if (themeButton.checked) {
+            theme = 'dark';
+            window.localStorage.setItem('theme', 'dark');
+
+            themeIcon.classList.remove('bi-moon-stars');
+            themeIcon.classList.add('bi-sun');
+        } else {
+            theme = 'light';
+            window.localStorage.setItem('theme', 'light');
+
+            themeIcon.classList.remove('bi-sun');
+            themeIcon.classList.add('bi-moon-stars');
+        }
+    }
 });
