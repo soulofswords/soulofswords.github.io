@@ -10,19 +10,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (theme === 'dark') {
         themeButton.checked = true;
+        themeIcon.classList.remove('bi-moon-stars');
+        themeIcon.classList.add('bi-sun');
     } else {
         themeButton.checked = false;
+        themeIcon.classList.remove('bi-sun');
+        themeIcon.classList.add('bi-moon-stars');
     }
 
     // Disable right click context menu
     document.addEventListener('contextmenu', e => e.preventDefault());
 
     // Change cursor on mouse click
-    document.addEventListener('mousedown', function() {
+    document.addEventListener('mousedown', function () {
         document.body.style.cursor = 'url("static/click-cursor.png") 19 2, auto';
     });
 
-    document.addEventListener('mouseup', function() {
+    document.addEventListener('mouseup', function () {
         document.body.style.cursor = 'url("static/default-cursor.png") 19 2, auto';
     });
 
