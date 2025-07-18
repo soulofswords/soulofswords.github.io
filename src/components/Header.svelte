@@ -1,7 +1,7 @@
 <nav class="flex justify-between px-1">
-    <ul class="flex gap-6 items-center justify-center text-xl">
-        <li><a href="/">Home</a></li>
-        <li><a href="Lore">Lore</a></li>
+    <ul class="flex gap-8 items-center justify-center text-xl">
+        <li class="hover:text-pink-300 transition-all duration-200 ease-in-out"><a href="/">Home</a></li>
+        <li class="hover:text-pink-300 transition-all duration-200 ease-in-out"><a href="/lore">Lore</a></li>
     </ul>
 
     <div class="text-center">
@@ -13,8 +13,8 @@
         <p>I am the collector of lost souls</p>
     </div>
 
-    <ul class="flex gap-6 items-center justify-center">
-        <li class="hover:scale-105 transition-all duration-200">
+    <ul class="flex gap-8 items-center justify-center">
+        <li class="hover:scale-105 hover:text-indigo-300 transition-all duration-200">
             <a href="https://youtube.com/@soulofswords" aria-label="YouTube">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
                 </svg>
             </a>
         </li>
-        <li class="hover:scale-105 transition-all duration-200">
+        <li class="hover:scale-105 hover:text-indigo-300 transition-all duration-200">
             <a href="https://twitch.tv/soulofswords" aria-label="Twitch">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@
                 </svg>
             </a>
         </li>
-        <li class="hover:scale-105 transition-all duration-200">
+        <li class="hover:scale-105 hover:text-indigo-300 transition-all duration-200">
             <a href="https://x.com/soulofswords" aria-label="X">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
