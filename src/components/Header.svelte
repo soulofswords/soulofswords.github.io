@@ -1,19 +1,12 @@
-<nav class="flex justify-between px-1">
-    <ul class="flex gap-8 items-center justify-center text-xl">
-        <li class="hover:text-pink-300 transition-all duration-200 ease-in-out"><a href="/">Home</a></li>
-        <li class="hover:text-pink-300 transition-all duration-200 ease-in-out"><a href="/lore">Lore</a></li>
-    </ul>
+<nav class="flex items-center justify-between px-1">
+    <h1
+        class="slide-in-right text-2xl font-bold bg-gradient-to-tr from-indigo-300 to-pink-300 bg-clip-text text-transparent"
+    >
+        Soul of Swords
+    </h1>
+    <p class="fade-in">I am the collector of lost souls</p>
 
-    <div class="text-center">
-        <h1
-            class="text-2xl font-bold bg-gradient-to-tr from-indigo-300 to-pink-300 bg-clip-text text-transparent"
-        >
-            Soul of Swords
-        </h1>
-        <p>I am the collector of lost souls</p>
-    </div>
-
-    <ul class="flex gap-8 items-center justify-center">
+    <ul class="slide-in-left flex gap-8 items-center justify-center">
         <li class="hover:scale-105 hover:text-indigo-300 transition-all duration-200">
             <a href="https://youtube.com/@soulofswords" aria-label="YouTube">
                 <svg
