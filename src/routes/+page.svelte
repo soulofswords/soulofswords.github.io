@@ -3,7 +3,7 @@
 </script>
 
 <section
-    class="min-h-[calc(100dvh-12rem)] flex items-center justify-center py-4 snap-center snap-always"
+    class="min-h-[calc(100dvh-12rem)] flex items-center justify-center py-4 snap-center snap-normal"
 >
     <div
         class="fade-in size-180 brightness-0 hover:brightness-[initial] transition-all duration-400 ease-in-out bg-[url('sos.svg')] bg-contain bg-no-repeat bg-center"
@@ -13,7 +13,7 @@
 </section>
 
 <article
-    class="relative min-h-[calc(100dvh-12rem)] flex flex-col items-center justify-center py-4 snap-center snap-always"
+    class="relative min-h-[calc(100dvh-12rem)] flex flex-col items-center justify-center py-4 snap-center snap-normal"
 >
     <div
         class="size-4/5 blur-3xl fade-in absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-full"
@@ -44,7 +44,7 @@
 </article>
 
 <article
-    class="relative min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-always"
+    class="relative min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-normal"
 >
     <p class="max-w-2xl text-justify text-xl">
         In the late 1960s, amidst the shadowed alleys of a crumbling city, a
@@ -65,7 +65,7 @@
 </article>
 
 <article
-    class="min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-always"
+    class="min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-normal"
 >
     <p class="max-w-2xl text-justify text-xl">
         Years passed, until the 1980s, when the soul, now bound within its
@@ -85,7 +85,7 @@
 </article>
 
 <article
-    class="min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-always"
+    class="min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-normal"
 >
     <p class="max-w-2xl text-justify text-xl">
         And so began a new journey—a tale not just of survival, but of
@@ -98,7 +98,7 @@
 </article>
 
 <article
-    class="relative min-h-[calc(100dvh-12rem)] flex flex-col items-center justify-center py-4 snap-center snap-always"
+    class="relative min-h-[calc(100dvh-12rem)] flex flex-col items-center justify-center py-4 snap-center snap-normal"
 >
     <h2 class="text-2xl font-bold text-pink-300 max-w-3xl text-center fade-in">
         Now, bound by both magic and destiny, the soul continues to seek its
@@ -107,7 +107,7 @@
 </article>
 
 <article
-    class="relative min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-always"
+    class="relative min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-normal"
 >
     <p class="max-w-xl text-center fade-in">
         Once a wandering spirit, now a cursed soul bound to a sword, this
