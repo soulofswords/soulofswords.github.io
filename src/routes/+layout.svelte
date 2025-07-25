@@ -3,6 +3,8 @@
 	import ArrowUp from "../components/ArrowUp.svelte";
 	import Footer from "../components/Footer.svelte";
 	import Header from "../components/Header.svelte";
+	import { page } from "$app/state";
+	import { goto } from "$app/navigation";
 
 	let { children } = $props();
 </script>
@@ -12,28 +14,33 @@
 </svelte:head>
 
 <div class="flex flex-col mx-auto gap-4 md:max-w-4/5 max-h-screen p-6">
-    <Header />
-    <main
-        class="flex-1 flex flex-col gap-12 border rounded-2xl overflow-x-hidden overflow-y-scroll scroll-smooth snap-y snap-mandatory min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] max-h-1/2"
-        id="main-content"
-    >
-        {@render children()}
-    </main>
-    <Footer>
-        <button
-            onclick={() => {
-                const main = document.querySelector("main");
-                main?.scrollTo({
-                    top: 0,
-                    behavior: "smooth",
-                });
-            }}
-            class="flex items-center cursor-pointer"
-        >
-            Scroll to Top
-            <ArrowUp class="h-5" />
-        </button>
-    </Footer>
+	<Header />
+	<main
+		class="flex-1 flex flex-col gap-12 border rounded-2xl overflow-x-hidden overflow-y-scroll scroll-smooth snap-y snap-mandatory min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] max-h-1/2"
+		id="main-content"
+	>
+		{@render children()}
+	</main>
+	<Footer>
+		<button
+			onclick={() => {
+				const main = document.querySelector("main");
+
+				if (page.url.pathname === "/") {
+					main?.scrollTo({
+						top: 0,
+						behavior: "smooth",
+					});
+				} else {
+					goto("/");
+				}
+			}}
+			class="flex items-center cursor-pointer"
+		>
+			Go to Top
+			<ArrowUp class="h-5" />
+		</button>
+	</Footer>
 </div>
 
 <style>
