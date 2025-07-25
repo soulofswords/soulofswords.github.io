@@ -6,7 +6,7 @@
     class="min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex items-center justify-center py-4 snap-center snap-normal"
 >
     <div
-        class="fade-in size-180 scale-95 hover:scale-100 brightness-0 hover:brightness-[initial] transition-all duration-400 ease-in-out bg-[url('./soulofswords.svg')] bg-contain bg-no-repeat bg-center"
+        class="fade-in size-180 scale-95 hover:scale-100 brightness-0 hover:brightness-[initial] transition-all duration-400 ease-in-out bg-[url('/soulofswords.svg')] bg-contain bg-no-repeat bg-center"
         aria-label="soul of swords live2d model"
         role="img"
     ></div>
