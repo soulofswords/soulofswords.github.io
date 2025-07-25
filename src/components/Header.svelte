@@ -1,15 +1,18 @@
-<nav class="flex items-center justify-between px-1">
+<nav class="flex flex-col md:flex-row items-center justify-between px-1">
     <h1
-        class="slide-in-right text-2xl font-bold bg-gradient-to-tr from-indigo-300 to-pink-300 bg-clip-text text-transparent"
+        class="slide-in-right text-xl md:text-2xl font-bold bg-gradient-to-tr from-indigo-300 to-pink-300 bg-clip-text text-transparent"
     >
         Soul of Swords
     </h1>
-    <p class="fade-in">I am the collector of lost souls</p>
+    <p class="fade-in text-sm md:text-base">I am the collector of lost souls</p>
 
-    <ul class="slide-in-left flex gap-8 items-center justify-center">
-        <li class="hover:scale-105 hover:text-indigo-300 transition-all duration-200">
+    <ul class="slide-in-left flex gap-2 md:gap-8 items-center justify-center mt-3 md:mt-0">
+        <li
+            class="hover:scale-105 hover:text-indigo-300 transition-all duration-200"
+        >
             <a href="https://youtube.com/@soulofswords" aria-label="YouTube">
                 <svg
+                    class="w-6 h-6 md:w-8 md:h-8"
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
                     height="32"
@@ -25,9 +28,12 @@
                 </svg>
             </a>
         </li>
-        <li class="hover:scale-105 hover:text-indigo-300 transition-all duration-200">
+        <li
+            class="hover:scale-105 hover:text-indigo-300 transition-all duration-200"
+        >
             <a href="https://twitch.tv/soulofswords" aria-label="Twitch">
                 <svg
+                    class="w-4 h-4 md:w-6 md:h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -43,9 +49,12 @@
                 </svg>
             </a>
         </li>
-        <li class="hover:scale-105 hover:text-indigo-300 transition-all duration-200">
+        <li
+            class="hover:scale-105 hover:text-indigo-300 transition-all duration-200"
+        >
             <a href="https://x.com/soulofswords" aria-label="X">
                 <svg
+                    class="w-4 h-4 md:w-6 md:h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
