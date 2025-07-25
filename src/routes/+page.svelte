@@ -1,6 +1,5 @@
 <script lang="ts">
     import ScrollDown from "../components/ScrollDown.svelte";
-    import { backIn } from "svelte/easing";
 </script>
 
 <section
