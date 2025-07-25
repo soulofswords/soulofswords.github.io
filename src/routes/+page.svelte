@@ -44,7 +44,7 @@
 </article>
 
 <article
-    class="relative min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-start scroll-mt-12 snap-normal"
+    class="relative min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-start snap-normal"
 >
     <p class="max-w-4/5 lg:max-w-2xl text-justify md:text-xl">
         In the late 1960s, amidst the shadowed alleys of a crumbling city, a
@@ -65,7 +65,7 @@
 </article>
 
 <article
-    class="min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center scroll-mt-12 snap-normal"
+    class="min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-normal"
 >
     <p class="max-w-4/5 lg:max-w-2xl text-justify md:text-xl">
         Years passed, until the 1980s, when the soul, now bound within its
@@ -85,7 +85,7 @@
 </article>
 
 <article
-    class="min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center scroll-mt-12 snap-normal"
+    class="min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-normal"
 >
     <p class="max-w-4/5 lg:max-w-2xl text-justify md:text-xl">
         And so began a new journey—a tale not just of survival, but of
@@ -98,7 +98,7 @@
 </article>
 
 <article
-    class="relative min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col items-center justify-center py-4 snap-center scroll-mt-12 snap-normal"
+    class="relative min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col items-center justify-center py-4 snap-center snap-normal"
 >
     <h2
         class="text-2xl font-bold text-pink-300 max-w-sm lg:max-w-3xl text-center fade-in"
