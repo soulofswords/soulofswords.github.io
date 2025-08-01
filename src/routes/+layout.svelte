@@ -13,7 +13,7 @@
 	<title>Soul of Swords</title>
 </svelte:head>
 
-<div class="flex flex-col mx-auto gap-4 md:max-w-4/5 max-h-screen p-6">
+<div class="flex flex-col mx-auto gap-4 md:max-w-4/5 max-h-dvh p-6">
 	<Header />
 	<main
 		class="flex-1 flex flex-col gap-12 border rounded-2xl overflow-x-hidden overflow-y-scroll scroll-smooth snap-y snap-mandatory min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] max-h-1/2"
