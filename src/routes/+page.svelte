@@ -111,7 +111,7 @@
 <article
     class="relative min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col gap-8 items-center justify-center py-4 snap-center snap-normal"
 >
-    <p class="max-w-4/5 lg:max-w-2xl text-justify fade-in">
+    <p class="max-w-4/5 lg:max-w-2xl text-justify fade-in text-sm md:text-xl">
         Once a wandering spirit, now a cursed soul bound to a sword, this
         entity's fate is entwined with the remnants of an ancient war between
         humans and demons. In the 1960s, it was saved by Baimeimo, a
@@ -119,14 +119,14 @@
         later, a royal daughter, fascinated by its legend, offers to break the
         curse—but at a cost.
     </p>
-    <p class="max-w-4/5 lg:max-w-2xl text-justify fade-in">
+    <p class="max-w-4/5 lg:max-w-2xl text-justify fade-in text-sm md:text-xl">
         The soul, now able to adapt and shift forms, waits for a wielder who
         will set it truly free. Its past is woven into music, war, and forgotten
         ties, making its presence more than just a blade—it is a story yet to be
         completed.
     </p>
     <div
-        class="animate-float fade-in h-32 w-60 md:h-64 md:w-120 transition-all duration-400 ease-in-out bg-[url('/sos-logo.svg')] bg-contain bg-no-repeat bg-center"
+        class="fade-in h-32 w-60 md:h-64 md:w-120 transition-all duration-400 ease-in-out bg-[url('/sos-logo.svg')] bg-contain bg-no-repeat bg-center"
         aria-label="soul of swords live2d model"
         role="img"
     ></div>
