@@ -1,12 +1,14 @@
 <nav class="flex flex-col md:flex-row items-center justify-between px-1">
     <h1
-        class="slide-in-right text-xl md:text-2xl font-bold bg-gradient-to-tr from-indigo-300 to-pink-300 bg-clip-text text-transparent"
+        class="slide-in-right text-xl md:text-2xl font-bold bg-gradient-to-tr from-indigo-300 hover:from-pink-300 to-pink-300 hover:to-indigo-300 transition-all duration-200 bg-clip-text text-transparent cursor-default"
     >
         Soul of Swords
     </h1>
     <p class="fade-in text-sm md:text-base">I am the collector of lost souls</p>
 
-    <ul class="slide-in-left flex gap-2 md:gap-8 items-center justify-center mt-3 md:mt-0">
+    <ul
+        class="slide-in-left flex gap-2 md:gap-8 items-center justify-center mt-3 md:mt-0"
+    >
         <li
             class="hover:scale-105 hover:text-indigo-300 transition-all duration-200"
         >
