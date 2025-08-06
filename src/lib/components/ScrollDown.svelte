@@ -1,4 +1,4 @@
-<p class="fade-in">
+<p class="fade-in scroll-down">
     <svg
         class="size-12 animate-bounce text-pink-300"
         xmlns="http://www.w3.org/2000/svg"
