@@ -1,5 +1,6 @@
 <script lang="ts">
-    import ScrollDown from "../../components/ScrollDown.svelte";
+    import ScrollDown from "../../lib/components/ScrollDown.svelte";
+    import sosLogo from "$lib/assets/sos-logo.svg";
 </script>
 
 <article
@@ -118,7 +119,8 @@
         completed.
     </p>
     <div
-        class="fade-in h-32 w-60 md:h-64 md:w-120 transition-all duration-400 ease-in-out bg-[url('/sos-logo.svg')] bg-contain bg-no-repeat bg-center"
+        style="background-image: url({sosLogo})"
+        class="fade-in h-32 w-60 md:h-64 md:w-120 transition-all duration-400 ease-in-out bg-contain bg-no-repeat bg-center"
         aria-label="soul of swords live2d model"
         role="img"
     ></div>

@@ -1,12 +1,14 @@
 <script lang="ts">
-    import ScrollDown from "../components/ScrollDown.svelte";
+    import ScrollDown from "$lib/components/ScrollDown.svelte";
+    import soulofswords from "$lib/assets/soulofswords.svg";
 </script>
 
 <section
     class="relative min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-10rem)] flex flex-col items-center justify-center py-4 snap-center snap-normal"
 >
     <div
-        class="flex-1 fade-in size-80 scale-90 hover:scale-100 md:brightness-0 md:hover:brightness-[initial] transition-all duration-400 ease-in-out bg-[url('/soulofswords.svg')] bg-contain bg-no-repeat bg-center"
+        style="background-image: url({soulofswords})"
+        class="flex-1 fade-in size-80 scale-90 hover:scale-100 md:brightness-0 md:hover:brightness-[initial] transition-all duration-400 ease-in-out bg-contain bg-no-repeat bg-center"
         aria-label="soul of swords live2d model"
         role="img"
     ></div>

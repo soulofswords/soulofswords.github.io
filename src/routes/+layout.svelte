@@ -1,8 +1,8 @@
 <script lang="ts">
 	import "../app.css";
-	import ArrowUp from "../components/ArrowUp.svelte";
-	import Footer from "../components/Footer.svelte";
-	import Header from "../components/Header.svelte";
+	import ArrowUp from "$lib/components/ArrowUp.svelte";
+	import Footer from "$lib/components/Footer.svelte";
+	import Header from "$lib/components/Header.svelte";
 	import { page } from "$app/state";
 	import { goto } from "$app/navigation";
 
@@ -87,7 +87,10 @@
 			onclick={() => {
 				const main = document.querySelector("main");
 
-				if (page.url.pathname === "/") {
+				if (
+					page.url.pathname === "/" ||
+					page.url.pathname === "/lore"
+				) {
 					main?.scrollTo({
 						top: 0,
 						behavior: "smooth",
