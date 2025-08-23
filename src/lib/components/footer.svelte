@@ -3,7 +3,7 @@
 </script>
 
 <footer
-    class="flex flex-col md:flex-row items-center justify-between gap-2 p-4 text-sm"
+    class="flex flex-col md:flex-row items-center justify-between gap-2 p-2 pt-4 text-sm"
 >
     <p>&copy; {year} Souls of Swords. All rights reserved.</p>
     <section class="flex items-center space-x-4">
