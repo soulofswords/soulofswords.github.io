@@ -1,20 +1,24 @@
-<nav class="flex flex-col md:flex-row items-center justify-between px-1">
+<nav
+    class="sos:flex sos:flex-col sos:md:flex-row sos:items-center sos:justify-between sos:px-1"
+>
     <h1
-        class="slide-in-right text-xl md:text-2xl font-bold bg-gradient-to-tr from-indigo-300 hover:from-pink-300 to-pink-300 hover:to-indigo-300 transition-all duration-200 bg-clip-text text-transparent cursor-default"
+        class="sos:slide-in-right sos:text-xl sos:md:text-2xl sos:font-bold sos:bg-gradient-to-tr sos:from-indigo-300 sos:hover:from-pink-300 sos:to-pink-300 sos:hover:to-indigo-300 sos:transition-all sos:duration-200 sos:bg-clip-text sos:text-transparent sos:cursor-default"
     >
         Soul of Swords
     </h1>
-    <p class="fade-in text-sm md:text-base">I am the collector of lost souls</p>
+    <p class="sos:fade-in sos:text-sm sos:md:text-base">
+        I am the collector of lost souls
+    </p>
 
     <ul
-        class="slide-in-left flex gap-2 md:gap-8 items-center justify-center mt-3 md:mt-0"
+        class="sos:slide-in-left sos:flex sos:gap-2 sos:md:gap-8 sos:items-center sos:justify-center sos:mt-3 sos:md:mt-0"
     >
         <li
-            class="hover:scale-105 hover:text-indigo-300 transition-all duration-200"
+            class="sos:hover:scale-105 sos:hover:text-indigo-300 sos:transition-all sos:duration-200"
         >
             <a href="https://youtube.com/@soulofswords" aria-label="YouTube">
                 <svg
-                    class="w-6 h-6 md:w-8 md:h-8"
+                    class="sos:w-6 sos:h-6 sos:md:w-8 sos:md:h-8"
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
                     height="32"
@@ -31,11 +35,11 @@
             </a>
         </li>
         <li
-            class="hover:scale-105 hover:text-indigo-300 transition-all duration-200"
+            class="sos:hover:scale-105 sos:hover:text-indigo-300 sos:transition-all sos:duration-200"
         >
             <a href="https://twitch.tv/soulofswords" aria-label="Twitch">
                 <svg
-                    class="w-4 h-4 md:w-6 md:h-6"
+                    class="sos:w-4 sos:h-4 sos:md:w-6 sos:md:h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -52,11 +56,11 @@
             </a>
         </li>
         <li
-            class="hover:scale-105 hover:text-indigo-300 transition-all duration-200"
+            class="sos:hover:scale-105 sos:hover:text-indigo-300 sos:transition-all sos:duration-200"
         >
             <a href="https://x.com/soulofswords" aria-label="X">
                 <svg
-                    class="w-4 h-4 md:w-6 md:h-6"
+                    class="sos:w-4 sos:h-4 sos:md:w-6 sos:md:h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -75,15 +79,15 @@
     </ul>
 </nav>
 
-<div class="flex">
-    <div class="content-center animate-spin">
+<div class="sos:flex">
+    <div class="sos:content-center sos:animate-spin">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6"
+            class="sos:size-6"
         >
             <path
                 stroke-linecap="round"
@@ -92,15 +96,15 @@
             />
         </svg>
     </div>
-    <div class="border-t flex-1 relative top-3 mx-4"></div>
-    <div class="content-center animate-spin">
+    <div class="sos:border-t sos:flex-1 sos:relative sos:top-3 sos:mx-4"></div>
+    <div class="sos:content-center sos:animate-spin">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6"
+            class="sos:size-6"
         >
             <path
                 stroke-linecap="round"
