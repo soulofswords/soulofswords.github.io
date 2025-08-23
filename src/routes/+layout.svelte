@@ -13,9 +13,7 @@
 	<title>Soul of Swords</title>
 </svelte:head>
 
-<div
-	class="sos:flex sos:flex-col sos:mx-auto sos:gap-4 sos:md:max-w-4/5 sos:max-h-dvh sos:p-6"
->
+<div class="flex flex-col mx-auto gap-4 md:max-w-4/5 max-h-dvh p-6">
 	<Header />
 	<main
 		onscroll={(e) => {
@@ -24,11 +22,11 @@
 				? scorllDownArrow?.classList.add("fade-out")
 				: scorllDownArrow?.classList.remove("fade-out");
 		}}
-		class="sos:relative sos:flex-1 sos:flex sos:flex-col sos:gap-12 sos:border sos:rounded-2xl sos:overflow-x-hidden sos:overflow-y-scroll sos:scroll-smooth sos:snap-y sos:snap-proximity sos:min-h-[calc(100dvh-14rem)] sos:md:min-h-[calc(100dvh-12rem)] sos:max-h-1/2"
+		class="relative flex-1 flex flex-col gap-12 border rounded-2xl overflow-x-hidden overflow-y-scroll scroll-smooth snap-y snap-proximity min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] max-h-1/2"
 		id="main-content"
 	>
 		<ul
-			class="sos:sticky sos:top-0 sos:left-0 sos:fade-in sos:flex sos:flex-col sos:items-center sos:gap-4 sos:w-fit sos:p-4 sos:z-9"
+			class="sticky top-0 left-0 fade-in flex flex-col items-center gap-4 w-fit p-4 z-9"
 		>
 			<button
 				onclick={() => {
@@ -40,11 +38,11 @@
 
 					goto("/");
 				}}
-				class="sos:cursor-pointer"
+				class="cursor-pointer"
 				aria-label="Home"
 			>
 				<li
-					class="sos:scale-95 sos:hover:scale-100 sos:hover:text-indigo-300 sos:transition-all sos:duration-200"
+					class="scale-95 hover:scale-100 hover:text-indigo-300 transition-all duration-200"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -69,11 +67,11 @@
 
 					goto("/lore");
 				}}
-				class="sos:cursor-pointer"
+				class="cursor-pointer"
 				aria-label="Lore"
 			>
 				<li
-					class="sos:scale-95 sos:hover:scale-100 sos:hover:text-indigo-300 sos:transition-all sos:duration-200"
+					class="scale-95 hover:scale-100 hover:text-indigo-300 transition-all duration-200"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -107,10 +105,10 @@
 					goto("/");
 				}
 			}}
-			class="sos:flex sos:items-center sos:cursor-pointer"
+			class="flex items-center cursor-pointer"
 		>
 			Go to Top
-			<ArrowUp class="sos:h-5" />
+			<ArrowUp class="h-5" />
 		</button>
 	</Footer>
 </div>
