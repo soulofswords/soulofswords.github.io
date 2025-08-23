@@ -1,4 +1,4 @@
-<p class="fade-in scroll-down sos:bg-transparent">
+<p class="fade-in scroll-down sos:bg-transparent sos:absolute sos:bottom-6">
     <svg
         class="sos:size-10 sos:animate-bounce sos:text-pink-300 sos:bg-transparent"
         xmlns="http://www.w3.org/2000/svg"

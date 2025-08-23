@@ -24,7 +24,7 @@
 				? scorllDownArrow?.classList.add("fade-out")
 				: scorllDownArrow?.classList.remove("fade-out");
 		}}
-		class="sos:relative sos:flex-1 sos:flex sos:flex-col sos:gap-12 sos:border sos:rounded-2xl sos:overflow-x-hidden sos:overflow-y-scroll sos:scroll-smooth sos:snap-y sos:snap-mandatory sos:min-h-[calc(100dvh-14rem)] sos:md:min-h-[calc(100dvh-12rem)] sos:max-h-1/2"
+		class="sos:relative sos:flex-1 sos:flex sos:flex-col sos:gap-12 sos:border sos:rounded-2xl sos:overflow-x-hidden sos:overflow-y-scroll sos:scroll-smooth sos:snap-y sos:snap-proximity sos:min-h-[calc(100dvh-14rem)] sos:md:min-h-[calc(100dvh-12rem)] sos:max-h-1/2"
 		id="main-content"
 	>
 		<ul
