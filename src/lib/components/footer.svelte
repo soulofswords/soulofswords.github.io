@@ -8,7 +8,7 @@
     <p>&copy; {year} Souls of Swords. All rights reserved.</p>
     <section class="flex items-center space-x-4">
         <a
-            class="hover:scale-105 hover:text-secondary transition-all duration-200 ease-in-out"
+            class="hover:scale-110 hover:text-secondary transition-all duration-200 ease-in-out"
             href="https://discord.gg/fJKjw9QAUg"
             rel="noopener noreferrer"
             target="_blank"
@@ -27,7 +27,7 @@
         </a>
 
         <a
-            class="hover:scale-105 hover:text-secondary transition-all duration-200 ease-in-out"
+            class="hover:scale-110 hover:text-secondary transition-all duration-200 ease-in-out"
             href="https://youtube.com/@soulofswords"
             rel="noopener noreferrer"
             target="_blank"
@@ -49,7 +49,7 @@
         </a>
 
         <a
-            class="hover:scale-105 hover:text-secondary transition-all duration-200 ease-in-out"
+            class="hover:scale-110 hover:text-secondary transition-all duration-200 ease-in-out"
             href="https://twitch.tv/soulofswords"
             rel="noopener noreferrer"
             target="_blank"
@@ -71,7 +71,7 @@
         </a>
 
         <a
-            class="hover:scale-105 hover:text-secondary transition-all duration-200 ease-in-out"
+            class="hover:scale-110 hover:text-secondary transition-all duration-200 ease-in-out"
             href="https://x.com/soulofswords"
             rel="noopener noreferrer"
             target="_blank"

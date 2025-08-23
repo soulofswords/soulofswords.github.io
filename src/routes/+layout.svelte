@@ -3,16 +3,32 @@
     import Header from "$lib/components/header.svelte";
     import { ScrollArea } from "$lib/components/ui/scroll-area/index.js";
     import { ModeWatcher } from "mode-watcher";
+    import { Button } from "$lib/components/ui/button/index.js";
     import "../app.css";
     let { children } = $props();
 </script>
 
 <ModeWatcher />
-<div class="flex flex-col md:max-w-11/12 min-h-screen mx-auto">
+<div class="flex flex-col max-w-11/12 min-h-screen h-full mx-auto">
     <Header />
     <ScrollArea
-        class="flex-1 flex flex-col items-center justify-center rounded-lg border p-4 h-full w-full"
+        id="main"
+        class="flex-1 flex flex-col items-center justify-center rounded-lg border p-4 h-full w-full max-h-[calc(100vh-210px)] md:max-h-[calc(100vh-140px)]"
     >
+        <div class="absolute grid grid-cols-2 gap-2">
+            <Button
+                onclick={() => {
+                    window.location.href = "/";
+                }}
+                variant="outline">Home</Button
+            >
+            <Button
+                onclick={() => {
+                    window.location.href = "/lore";
+                }}
+                variant="outline">Lore</Button
+            >
+        </div>
         {@render children?.()}
     </ScrollArea>
     <Footer />
