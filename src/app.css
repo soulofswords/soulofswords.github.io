@@ -4,5 +4,5 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 * {
-    @apply sos:scrollbar-none sos:transition-all sos:duration-300 sos:ease-in-out sos:scroll-smooth;
+    @apply sos:scrollbar-none sos:transition-all sos:duration-300 sos:ease-in-out sos:scroll-smooth sos:bg-indigo-50;
 }
