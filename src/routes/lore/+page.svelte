@@ -31,9 +31,7 @@
     >
         The Soul Bound in the Forgotten Song
     </h2>
-    <span class="sos:absolute sos:bottom-2">
-        <ScrollDown />
-    </span>
+    <ScrollDown />
 </article>
 
 <article

@@ -12,9 +12,7 @@
         aria-label="soul of swords live2d model"
         role="img"
     ></div>
-    <span class="sos:absolute sos:bottom-6">
-        <ScrollDown />
-    </span>
+    <ScrollDown />
 </section>
 
 <article
