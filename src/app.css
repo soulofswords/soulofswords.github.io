@@ -1,6 +1,7 @@
 @import "tailwindcss" prefix(sos);
 @plugin '@tailwindcss/typography';
 @plugin 'tailwind-scrollbar';
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 * {
     @apply sos:scrollbar-none sos:transition-all sos:duration-300 sos:ease-in-out sos:scroll-smooth;
