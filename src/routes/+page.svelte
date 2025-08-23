@@ -8,7 +8,7 @@
 >
     <div
         style="background-image: url({soulofswords})"
-        class="sos:flex-1 sos:fade-in sos:size-80 sos:scale-90 sos:hover:scale-100 sos:md:brightness-0 sos:md:hover:brightness-[initial] sos:transition-all sos:duration-400 sos:ease-in-out sos:bg-contain sos:bg-no-repeat sos:bg-center"
+        class="sos:flex-1 sos:fade-in sos:size-80 sos:scale-90 sos:hover:scale-100 sos:transition-all sos:duration-400 sos:ease-in-out sos:bg-contain sos:bg-no-repeat sos:bg-center"
         aria-label="soul of swords live2d model"
         role="img"
     ></div>
