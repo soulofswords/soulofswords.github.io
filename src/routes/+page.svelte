@@ -1,26 +1,28 @@
 <script lang="ts">
-    import ScrollDown from "$lib/components/ScrollDown.svelte";
     import soulofswords from "$lib/assets/soulofswords.svg";
+    import ScrollDown from "$lib/components/ScrollDown.svelte";
 </script>
 
 <section
-    class="relative min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-10rem)] flex flex-col items-center justify-center py-4 snap-center snap-normal"
+    class="sos:relative sos:min-h-[calc(100dvh-14rem)] sos:md:min-h-[calc(100dvh-10rem)] sos:flex sos:flex-col sos:items-center sos:justify-center sos:py-4 sos:snap-center sos:snap-normal"
 >
     <div
         style="background-image: url({soulofswords})"
-        class="flex-1 fade-in size-80 scale-90 hover:scale-100 md:brightness-0 md:hover:brightness-[initial] transition-all duration-400 ease-in-out bg-contain bg-no-repeat bg-center"
+        class="sos:flex-1 sos:fade-in sos:size-80 sos:scale-90 sos:hover:scale-100 sos:md:brightness-0 sos:md:hover:brightness-[initial] sos:transition-all sos:duration-400 sos:ease-in-out sos:bg-contain sos:bg-no-repeat sos:bg-center"
         aria-label="soul of swords live2d model"
         role="img"
     ></div>
-    <span class="absolute bottom-6">
+    <span class="sos:absolute sos:bottom-6">
         <ScrollDown />
     </span>
 </section>
 
 <article
-    class="relative min-h-[calc(100dvh-14rem)] md:min-h-[calc(100dvh-12rem)] flex flex-col items-center justify-center py-4 snap-center snap-normal"
+    class="sos:relative sos:min-h-[calc(100dvh-14rem)] sos:md:min-h-[calc(100dvh-12rem)] sos:flex sos:flex-col sos:items-center sos:justify-center sos:py-4 sos:snap-center sos:snap-normal"
 >
-    <p class="max-w-4/5 lg:max-w-2xl text-justify text-sm md:text-xl">
+    <p
+        class="sos:max-w-4/5 sos:lg:max-w-2xl sos:text-justify sos:text-sm sos:md:text-xl"
+    >
         Once a lost soul in a crumbling city, I was saved by Baimeimo—a magical,
         shapeshifting singer. But peace didn’t last: the Royal Court’s curse
         trapped me in a sword, making me part legend, part weapon. Freed decades
@@ -29,10 +31,10 @@
         freedom—an ever-evolving tale waiting to be continued
     </p>
     <div
-        class="border blur-3xl fade-in absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        class="sos:border sos:blur-3xl sos:fade-in sos:absolute sos:-z-10 sos:top-1/2 sos:left-1/2 sos:-translate-x-1/2 sos:-translate-y-1/2"
     >
         <svg
-            class="animate-[spin_6s_linear_infinite] opacity-50 w-screen"
+            class="sos:animate-[spin_6s_linear_infinite] sos:opacity-50 sos:w-screen"
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             xmlns:xlink="http://www.w3.org/1999/xlink"

@@ -1,6 +1,6 @@
 <p class="fade-in scroll-down">
     <svg
-        class="size-12 animate-bounce text-pink-300"
+        class="sos:size-12 sos:animate-bounce sos:text-pink-300"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
