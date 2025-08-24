@@ -10,7 +10,7 @@
 </script>
 
 <section
-    class="flex flex-col gap-6 xl:flex-row items-center justify-center mx-auto lg:max-w-2/3 h-full w-full"
+    class="flex flex-col gap-6 xl:flex-row items-center justify-center mx-auto lg:max-w-2/3 h-full w-full mt-8"
 >
     <img
         class="w-[340px] h-[calc(100vh-260px)] md:h-[calc(100vh-200px)] scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none scale-up"
@@ -25,7 +25,7 @@
         {#if isInView}
             <p
                 transition:fly={{ y: 60, duration: 1000, opacity: 0 }}
-                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full"
+                class="sm:text-lg text-justify px-6 sm:max-w-4/5 lg:max-w-full"
             >
                 Once a lost soul in a crumbling city, I was saved by Baimeimo—a
                 magical, shapeshifting singer. But peace didn’t last: the Royal

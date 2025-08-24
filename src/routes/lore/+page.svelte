@@ -16,7 +16,7 @@
         class="w-full h-[calc(100vh-200px)] flex flex-col items-center justify-center gap-4"
     >
         <h2
-            class="text-6xl text-bold text-justify lg:text-left text-primary/80 px-6 max-w-2/3 mb-2 scale-up"
+            class="text-4xl text-center md:text-6xl text-bold xl:text-justify lg:text-left text-primary/80 px-6 sm:max-w-2/3 mb-2 scale-up"
         >
             The
             <span class="text-secondary animate-pulse">Soul</span>
@@ -37,7 +37,7 @@
         {#if isInView[0]}
             <p
                 transition:fade={{ duration: 300 }}
-                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full slide-in-left-to-right"
+                class="sm:text-lg text-justify px-6 sm:max-w-4/5 lg:max-w-full slide-in-left-to-right"
             >
                 In the late 1960s, amidst the shadowed alleys of a crumbling
                 city, a lone soul drifted aimlessly, its form unseen but longing
@@ -50,7 +50,7 @@
 
             <p
                 transition:fade={{ duration: 300 }}
-                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full slide-in-right-to-left"
+                class="sm:text-lg text-justify px-6 sm:max-w-4/5 lg:max-w-full slide-in-right-to-left"
             >
                 For a time, the soul thrived under her care, learning the art of
                 music and the bittersweet nature of human emotions. But peace
@@ -71,7 +71,7 @@
         {#if isInView[1]}
             <p
                 transition:fly={{ y: 60, duration: 1000 }}
-                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full"
+                class="sm:text-lg text-justify px-6 sm:max-w-4/5 lg:max-w-full"
             >
                 Years passed, until the 1980s, when the soul, now bound within
                 its cursed blade, was summoned to the Royal Court once more.
@@ -83,7 +83,7 @@
 
             <p
                 transition:fly={{ y: 60, duration: 1000 }}
-                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full"
+                class="sm:text-lg text-justify px-6 sm:max-w-4/5 lg:max-w-full"
             >
                 Yet, among those who judged her, a royal daughter stood apart,
                 intrigued by the cursed blade. She was mischievous yet kind—a
@@ -103,7 +103,7 @@
         {#if isInView[2]}
             <p
                 transition:fade={{ duration: 300 }}
-                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full"
+                class="sm:text-lg text-justify px-6 sm:max-w-4/5 lg:max-w-full"
             >
                 And so began a new journey—a tale not just of survival, but of
                 transformation. The soul was no longer just an entity lost to
@@ -124,7 +124,7 @@
         {#if isInView[3]}
             <h2
                 transition:blur={{ duration: 600 }}
-                class="text-4xl text-bold text-justify lg:text-left text-secondary/80 px-6 max-w-4/5 mb-2"
+                class="text-xl md:text-4xl text-bold text-justify lg:text-left text-secondary/80 px-6 sm:max-w-4/5 mb-2"
             >
                 Now, bound by both magic and destiny, the soul continues to seek
                 its wielder, waiting for the one who will finally set it free.
@@ -140,7 +140,7 @@
         {#if isInView[4]}
             <p
                 transition:blur={{ duration: 600 }}
-                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full"
+                class="sm:text-lg text-justify px-6 sm:max-w-4/5 lg:max-w-full"
             >
                 Once a wandering spirit, now a cursed soul bound to a sword,
                 this entity's fate is entwined with the remnants of an ancient
@@ -152,7 +152,7 @@
 
             <p
                 transition:blur={{ duration: 600 }}
-                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full"
+                class="sm:text-lg text-justify px-6 sm:max-w-4/5 lg:max-w-full"
             >
                 The soul, now able to adapt and shift forms, waits for a wielder
                 who will set it truly free. Its past is woven into music, war,
