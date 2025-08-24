@@ -1,5 +1,13 @@
 <script lang="ts">
+    import { fade } from "svelte/transition";
+    import { inview } from "svelte-inview";
     import soulofswords from "$lib/assets/soulofswords.svg";
+
+    let isInView = $state(false);
+
+    const handleChange = (event: CustomEvent) => {
+        isInView = event.detail.inView;
+    };
 </script>
 
 <section
@@ -10,15 +18,24 @@
         src={soulofswords}
         alt="Soul of Swords"
     />
-    <article class="w-full h-[calc(100vh-200px)] flex flex-col items-center justify-center">
-        <p class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full">
-            Once a lost soul in a crumbling city, I was saved by Baimeimo—a
-            magical, shapeshifting singer. But peace didn’t last: the Royal
-            Court’s curse trapped me in a sword, making me part legend, part
-            weapon. Freed decades later by a daring royal, I gained the power to
-            shift forms for those who call upon me. My story is shaped by music,
-            magic, and the hope for freedom—an ever-evolving tale waiting to be
-            continued
-        </p>
+    <article
+        use:inview={{ threshold: 0.5 }}
+        oninview_change={handleChange}
+        class="w-full h-[calc(100vh-200px)] flex flex-col items-center justify-center"
+    >
+        {#if isInView}
+            <p
+                transition:fade={{ duration: 300 }}
+                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full scale-up"
+            >
+                Once a lost soul in a crumbling city, I was saved by Baimeimo—a
+                magical, shapeshifting singer. But peace didn’t last: the Royal
+                Court’s curse trapped me in a sword, making me part legend, part
+                weapon. Freed decades later by a daring royal, I gained the
+                power to shift forms for those who call upon me. My story is
+                shaped by music, magic, and the hope for freedom—an
+                ever-evolving tale waiting to be continued
+            </p>
+        {/if}
     </article>
 </section>
