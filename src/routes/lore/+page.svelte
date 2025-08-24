@@ -1,7 +1,6 @@
 <script lang="ts">
     import { blur, fade, fly } from "svelte/transition";
     import { inview } from "svelte-inview";
-    import sosLogo from "$lib/assets/sos-logo.svg";
 
     let isInView = $state([false, false, false, false, false]);
 
@@ -165,7 +164,7 @@
             <img
                 transition:fly={{ y: 60, duration: 1000, opacity: 0 }}
                 class="w-[460px] h-80 scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none"
-                src={sosLogo}
+                src="/sos-logo.svg"
                 alt="Soul of Swords"
             />
         {/if}
