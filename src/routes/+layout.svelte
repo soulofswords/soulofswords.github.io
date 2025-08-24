@@ -33,3 +33,21 @@
     </ScrollArea>
     <Footer />
 </div>
+
+<style>
+    @keyframes scaleUp {
+        0% {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    :global(.scale-up) {
+        animation: scaleUp 0.6s ease-in-out forwards;
+        transition: transform 0.6s ease-in-out forwards;
+    }
+</style>
