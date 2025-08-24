@@ -1,9 +1,9 @@
 <script lang="ts">
     import Footer from "$lib/components/footer.svelte";
     import Header from "$lib/components/header.svelte";
+    import { Button } from "$lib/components/ui/button/index.js";
     import { ScrollArea } from "$lib/components/ui/scroll-area/index.js";
     import { ModeWatcher } from "mode-watcher";
-    import { Button } from "$lib/components/ui/button/index.js";
     import "../app.css";
     let { children } = $props();
 </script>
@@ -46,8 +46,54 @@
         }
     }
 
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRighttoLeft {
+        0% {
+            transform: translateX(10%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLefttoRight {
+        0% {
+            transform: translateX(-10%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
     :global(.scale-up) {
         animation: scaleUp 0.6s ease-in-out forwards;
+        transition: transform 0.6s ease-in-out forwards;
+    }
+
+    :global(.fade-in) {
+        animation: fadeIn 0.6s ease-in-out forwards;
+        transition: transform 0.6s ease-in-out forwards;
+    }
+
+    :global(.slide-in-right-to-left) {
+        animation: slideInRighttoLeft 1s ease-in-out forwards;
+        transition: transform 0.6s ease-in-out forwards;
+    }
+
+    :global(.slide-in-left-to-right) {
+        animation: slideInLefttoRight 1s ease-in-out forwards;
         transition: transform 0.6s ease-in-out forwards;
     }
 </style>

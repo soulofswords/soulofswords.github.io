@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { fade } from "svelte/transition";
     import { inview } from "svelte-inview";
     import soulofswords from "$lib/assets/soulofswords.svg";
+    import { fly } from "svelte/transition";
 
     let isInView = $state(false);
 
@@ -14,7 +14,7 @@
     class="flex flex-col gap-6 xl:flex-row items-center justify-center mx-auto lg:max-w-2/3 h-full w-full"
 >
     <img
-        class="w-[340px] h-[calc(100vh-260px)] md:h-[calc(100vh-200px)] scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none"
+        class="w-[340px] h-[calc(100vh-260px)] md:h-[calc(100vh-200px)] scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none scale-up"
         src={soulofswords}
         alt="Soul of Swords"
     />
@@ -25,8 +25,8 @@
     >
         {#if isInView}
             <p
-                transition:fade={{ duration: 300 }}
-                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full scale-up"
+                transition:fly={{ y: 60, duration: 1000, opacity: 0 }}
+                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full"
             >
                 Once a lost soul in a crumbling city, I was saved by Baimeimo—a
                 magical, shapeshifting singer. But peace didn’t last: the Royal

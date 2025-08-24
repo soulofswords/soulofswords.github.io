@@ -21,7 +21,7 @@
         </button>
     </h1>
     <div class="flex items-center justify-between w-full md:w-fit">
-        <p class="text-sm md:text-base md:mr-8 hover:text-secondary">
+        <p class="text-sm md:text-base md:mr-8 hover:text-secondary fade-in">
             I am the collector of lost souls
         </p>
         <ThemeToggle />
