@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 * {
-  @apply select-none;
+  @apply select-none scroll-smooth;
 }
 
 html,

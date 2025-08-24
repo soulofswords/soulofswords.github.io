@@ -18,7 +18,7 @@ const config = {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		},
 		alias: {
-			"@/*": "./path/to/lib/*",
+			"@/*": "./src/lib/*",
 		},
 	}
 };
