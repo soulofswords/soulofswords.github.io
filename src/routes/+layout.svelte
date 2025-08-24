@@ -13,9 +13,9 @@
     <Header />
     <ScrollArea
         id="main"
-        class="flex-1 flex flex-col items-center justify-center rounded-lg border p-4 h-full w-full max-h-[calc(100vh-210px)] md:max-h-[calc(100vh-140px)]"
+        class="flex-1 flex flex-col items-center justify-center rounded-lg border md:p-4 h-full w-full max-h-[calc(100vh-210px)] md:max-h-[calc(100vh-140px)] overflow-clip"
     >
-        <div class="absolute grid grid-cols-2 gap-2">
+        <div class="absolute grid grid-cols-2 gap-2 p-4 mx-auto z-50 backdrop-blur-2xl w-full sm:w-fit sm:backdrop-blur-none">
             <Button
                 onclick={() => {
                     window.location.href = "/";
