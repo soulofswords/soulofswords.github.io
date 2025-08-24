@@ -14,7 +14,7 @@
 >
     <img
         class="w-[340px] h-[calc(100vh-260px)] md:h-[calc(100vh-200px)] scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none scale-up"
-        src="/soulofswords.svg"
+        src="soulofswords.svg"
         alt="Soul of Swords"
     />
     <article

@@ -19,10 +19,7 @@
             class="text-6xl text-bold text-justify lg:text-left text-primary/80 px-6 max-w-2/3 mb-2 scale-up"
         >
             The
-            <span
-                class="text-secondary animate-pulse"
-                >Soul</span
-            >
+            <span class="text-secondary animate-pulse">Soul</span>
             Bound
             <span class="text-secondary">in</span> the
             <span
@@ -142,8 +139,9 @@
     >
         {#if isInView[4]}
             <p
-            transition:blur={{ duration: 600 }}
-            class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full">
+                transition:blur={{ duration: 600 }}
+                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full"
+            >
                 Once a wandering spirit, now a cursed soul bound to a sword,
                 this entity's fate is entwined with the remnants of an ancient
                 war between humans and demons. In the 1960s, it was saved by
@@ -154,7 +152,8 @@
 
             <p
                 transition:blur={{ duration: 600 }}
-            class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full">
+                class="text-lg text-justify px-6 max-w-4/5 lg:max-w-full"
+            >
                 The soul, now able to adapt and shift forms, waits for a wielder
                 who will set it truly free. Its past is woven into music, war,
                 and forgotten ties, making its presence more than just a
@@ -164,7 +163,7 @@
             <img
                 transition:fly={{ y: 60, duration: 1000, opacity: 0 }}
                 class="w-[460px] h-80 scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none"
-                src="/sos-logo.svg"
+                src="sos-logo.svg"
                 alt="Soul of Swords"
             />
         {/if}
