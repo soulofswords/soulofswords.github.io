@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { ChevronDown } from "@lucide/svelte";
     import { inview } from "svelte-inview";
     import { fly } from "svelte/transition";
 
@@ -10,13 +11,21 @@
 </script>
 
 <section
-    class="flex flex-col gap-6 xl:flex-row items-center justify-center mx-auto lg:max-w-2/3 h-full w-full mt-8"
+    class="flex flex-col gap-6 xl:flex-row items-center justify-center mx-auto lg:max-w-2/3 h-fit w-full mt-4"
 >
     <img
-        class="w-[340px] h-[calc(100vh-260px)] md:h-[calc(100vh-200px)] scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none scale-up"
+        class="w-[340px] h-[calc(100vh-260px)] md:h-[calc(100vh-360px)] scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none scale-up"
         src="soulofswords.svg"
         alt="Soul of Swords"
     />
+
+    <div class="block xl:hidden animate-bounce delay-100">
+        <ChevronDown
+            size={32}
+            class="animate-in fade-in duration-700 ease-in"
+        />
+    </div>
+
     <article
         use:inview={{ threshold: 0.5 }}
         oninview_change={handleChange}

@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { ChevronDown } from "@lucide/svelte";
     import { blur, fade, fly } from "svelte/transition";
     import { inview } from "svelte-inview";
 
@@ -13,10 +14,10 @@
     class="flex flex-col gap-6 xl:grid xl:grid-cols-2 items-center justify-center mx-auto lg:max-w-4/5 h-full w-full xl:w-4/5"
 >
     <article
-        class="w-full h-[calc(100vh-200px)] flex flex-col items-center justify-center gap-4"
+        class="w-full h-[calc(100vh-300px)] flex flex-col items-center justify-center gap-4"
     >
         <h2
-            class="text-4xl text-center md:text-6xl text-bold xl:text-justify lg:text-left text-primary/80 px-6 sm:max-w-2/3 mb-2 scale-up"
+            class="text-4xl text-center md:text-6xl text-bold lg:text-left text-primary/80 px-6 sm:max-w-2/3 mb-2 scale-up"
         >
             The
             <span class="text-secondary animate-pulse">Soul</span>
@@ -28,6 +29,13 @@
             > Song
         </h2>
     </article>
+
+    <div class="block xl:hidden animate-bounce delay-100">
+        <ChevronDown
+            size={32}
+            class="animate-in fade-in duration-700 ease-in"
+        />
+    </div>
 
     <article
         use:inview={{ threshold: 0.2 }}
