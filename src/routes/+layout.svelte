@@ -5,6 +5,8 @@
     import { ScrollArea } from "$lib/components/ui/scroll-area/index.js";
     import { ModeWatcher } from "mode-watcher";
     import "../app.css";
+    import { cn } from "@/utils";
+    import { page } from "$app/state";
     let { children } = $props();
 </script>
 
@@ -15,18 +17,30 @@
         id="main"
         class="flex-1 flex flex-col items-center justify-center rounded-lg border md:p-4 h-full w-full max-h-[calc(100vh-210px)] md:max-h-[calc(100vh-140px)] overflow-clip"
     >
-        <div class="absolute grid grid-cols-2 gap-2 p-4 mx-auto z-50 backdrop-blur-2xl w-full sm:w-fit sm:backdrop-blur-none">
+        <div
+            class="absolute grid grid-cols-2 gap-2 p-4 mx-auto z-50 backdrop-blur-2xl w-full sm:w-fit sm:backdrop-blur-none"
+        >
             <Button
                 onclick={() => {
                     window.location.href = "/";
                 }}
-                variant="outline">Home</Button
+                variant="outline"
+                class={cn(
+                    "hover:cursor-pointer active:scale-95",
+                    page.route.id === "/" &&
+                        "shadow-[0px_0px_4px_1px_rgba(240,_105,_180,_0.8)]",
+                )}>Home</Button
             >
             <Button
                 onclick={() => {
                     window.location.href = "/lore";
                 }}
-                variant="outline">Lore</Button
+                variant="outline"
+                class={cn(
+                    "hover:cursor-pointer active:scale-95",
+                    page.route.id === "/lore" &&
+                        "shadow-[0px_0px_4px_1px_rgba(240,_105,_180,_0.8)]",
+                )}>Lore</Button
             >
         </div>
         {@render children?.()}

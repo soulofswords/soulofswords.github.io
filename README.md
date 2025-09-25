@@ -5,5 +5,3 @@
 These media files are included in this project with the permission of the copyright holders. Any use of these media files outside of this project requires written permission from the copyright holders.
 >
 > I am not and will not be responsible for any copyright issues arrise from the use of these media files within this or outside this project. In such case, please contact the respective copyright holders.
-
-# Credits & Acknowledgements:
