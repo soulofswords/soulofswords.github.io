@@ -1,14 +1,45 @@
 <script lang="ts">
+    import { page } from "$app/state";
     import Footer from "$lib/components/footer.svelte";
     import Header from "$lib/components/header.svelte";
     import { Button } from "$lib/components/ui/button/index.js";
     import { ScrollArea } from "$lib/components/ui/scroll-area/index.js";
+    import { cn } from "@/utils";
     import { ModeWatcher } from "mode-watcher";
     import "../app.css";
-    import { cn } from "@/utils";
-    import { page } from "$app/state";
+    import { URL } from "../consts";
+
     let { children } = $props();
 </script>
+
+<svelte:head>
+    <title>Soul of Swords {page.data.title && `: ${page.data.title}`}</title>
+
+    <meta
+        name="keywords"
+        content="Soul of Swords, sos, soul, vtuber, live stream, soulofswords"
+    />
+    <meta name="author" content="Soul of Swords" />
+
+    <!-- HTML Meta Tags -->
+    <meta name="description" content={page.data.description} />
+    <meta property="og:logo" content={`${URL}/sos-logo.svg`} />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content={page.url.href} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={page.data.title} />
+    <meta property="og:description" content={page.data.description} />
+    <meta property="og:image" content="" />
+
+    <!-- Twitter / X Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content={URL} />
+    <meta property="twitter:url" content={page.url.href} />
+    <meta name="twitter:title" content={page.data.title} />
+    <meta name="twitter:description" content={page.data.description} />
+    <meta name="twitter:image" content="" />
+</svelte:head>
 
 <ModeWatcher />
 <div class="flex flex-col max-w-11/12 min-h-screen h-full mx-auto">
