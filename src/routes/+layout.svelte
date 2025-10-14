@@ -26,19 +26,19 @@
     <meta property="og:logo" content={`${URL}/sos-logo.svg`} />
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content={page.url.href} />
+    <meta property="og:url" content={page.url.toString()} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={page.data.title} />
     <meta property="og:description" content={page.data.description} />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content={`${URL}/sos-og.png`} />
 
     <!-- Twitter / X Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content={URL} />
-    <meta property="twitter:url" content={page.url.href} />
+    <meta property="twitter:url" content={page.url.toString()} />
     <meta name="twitter:title" content={page.data.title} />
     <meta name="twitter:description" content={page.data.description} />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content={`${URL}/sos-og.png`} />
 </svelte:head>
 
 <ModeWatcher />
