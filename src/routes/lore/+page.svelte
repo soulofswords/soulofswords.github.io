@@ -72,7 +72,7 @@
     </article>
 
     <article
-        use:inview={{ threshold: 0.6 }}
+        use:inview={{ threshold: 0.4 }}
         oninview_change={(e) => handleChange(1, e)}
         class="w-full h-[calc(100vh-200px)] flex flex-col items-center justify-center gap-6"
     >
@@ -104,7 +104,7 @@
     </article>
 
     <article
-        use:inview={{ threshold: 0.5 }}
+        use:inview={{ threshold: 0.4 }}
         oninview_change={(e) => handleChange(2, e)}
         class="w-full h-[calc(100vh-200px)] flex flex-col items-center justify-center gap-6"
     >
@@ -125,7 +125,7 @@
     </article>
 
     <article
-        use:inview={{ threshold: 0.5 }}
+        use:inview={{ threshold: 0.4 }}
         oninview_change={(e) => handleChange(3, e)}
         class="w-full h-[calc(100vh-200px)] flex flex-col items-center justify-center gap-6"
     >
