@@ -171,7 +171,11 @@
             <img
                 transition:fly={{ y: 60, duration: 1000, opacity: 0 }}
                 class="w-[460px] h-80 scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none"
-                src="sos-logo.svg"
+                src="/sos-logo.webp"
+                width="1000"
+                height="388"
+                loading="lazy"
+                decoding="async"
                 alt="Soul of Swords"
             />
         {/if}

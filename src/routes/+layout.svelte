@@ -23,7 +23,7 @@
 
     <!-- HTML Meta Tags -->
     <meta name="description" content={page.data.description} />
-    <meta property="og:logo" content={`${URL}/sos-logo.svg`} />
+    <meta property="og:logo" content={`${URL}/sos-logo.webp`} />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content={page.url.toString()} />
@@ -49,12 +49,10 @@
         class="flex-1 flex flex-col items-center justify-center rounded-lg border md:p-4 h-full w-full max-h-[calc(100vh-210px)] md:max-h-[calc(100vh-140px)] overflow-clip"
     >
         <div
-            class="absolute grid grid-cols-2 gap-2 p-4 mx-auto z-50 backdrop-blur-2xl w-full sm:w-fit sm:backdrop-blur-none"
+            class="absolute grid grid-cols-3 gap-2 p-4 mx-auto z-50 backdrop-blur-2xl w-full sm:w-fit sm:backdrop-blur-none"
         >
             <Button
-                onclick={() => {
-                    window.location.href = "/";
-                }}
+                href="/"
                 variant="outline"
                 class={cn(
                     "hover:cursor-pointer active:scale-95",
@@ -63,15 +61,23 @@
                 )}>Home</Button
             >
             <Button
-                onclick={() => {
-                    window.location.href = "/lore";
-                }}
+                href="/lore"
                 variant="outline"
                 class={cn(
                     "hover:cursor-pointer active:scale-95",
                     page.route.id === "/lore" &&
                         "shadow-[0px_0px_4px_1px_rgba(240,_105,_180,_0.8)]",
                 )}>Lore</Button
+            >
+            <Button
+                href="/apps"
+                aria-current={page.route.id === "/apps" ? "page" : undefined}
+                variant="outline"
+                class={cn(
+                    "hover:cursor-pointer active:scale-95",
+                    page.route.id === "/apps" &&
+                        "shadow-[0px_0px_4px_1px_rgba(240,_105,_180,_0.8)]",
+                )}>Apps</Button
             >
         </div>
         {@render children?.()}

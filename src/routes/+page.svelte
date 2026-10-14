@@ -15,7 +15,10 @@
 >
     <img
         class="w-[340px] h-[calc(100vh-260px)] md:h-[calc(100vh-360px)] scale-90 hover:scale-100 transition-all duration-400 ease-in-out select-none scale-up"
-        src="soulofswords.svg"
+        src="/soulofswords.webp"
+        width="564"
+        height="1000"
+        fetchpriority="high"
         alt="Soul of Swords"
     />
 
