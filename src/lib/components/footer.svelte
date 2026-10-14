@@ -6,7 +6,7 @@
     class="flex flex-col md:flex-row items-center justify-between gap-2 p-2 pt-4 text-sm"
 >
     <p>&copy; {year} Souls of Swords. All rights reserved.</p>
-    <section class="flex items-center space-x-4">
+    <section class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
         <a
             class="hover:scale-110 hover:text-secondary transition-all duration-200 ease-in-out"
             href="https://discord.gg/fJKjw9QAUg"
@@ -91,5 +91,19 @@
                 />
             </svg>
         </a>
+        <a
+            class="hover:scale-110 hover:text-secondary transition-all duration-200 ease-in-out"
+            href="https://vtubie.com/soulofswords/"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Vtubie profile"
+        >Vtubie</a>
+        <a
+            class="hover:scale-110 hover:text-secondary transition-all duration-200 ease-in-out"
+            href="https://myanimelist.net/profile/Soulofswords"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="MyAnimeList profile"
+        >MyAnimeList</a>
     </section>
 </footer>
