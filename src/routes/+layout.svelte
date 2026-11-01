@@ -3,6 +3,7 @@
     import Footer from "$lib/components/footer.svelte";
     import Header from "$lib/components/header.svelte";
     import ScrollProgress from "$lib/components/scroll-progress.svelte";
+    import CustomCursor from "$lib/components/custom-cursor.svelte";
     import { Button } from "$lib/components/ui/button/index.js";
     import { ScrollArea } from "$lib/components/ui/scroll-area/index.js";
     import { cn } from "@/utils";
@@ -44,6 +45,7 @@
 
 <ModeWatcher />
 <ScrollProgress />
+<CustomCursor />
 <div class="flex flex-col max-w-11/12 min-h-screen h-full mx-auto">
     <Header />
     <ScrollArea

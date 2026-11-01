@@ -182,3 +182,108 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ==========================================================================
+   ANIME-STYLE CUSTOM CURSOR
+   ========================================================================== */
+
+/* Trail ghost cursor */
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 110, 167, 0.35);
+  background: transparent;
+  pointer-events: none;
+  z-index: 9997;
+  will-change: transform;
+}
+
+/* Main cursor follower */
+.custom-cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid hsl(var(--secondary));
+  background: rgba(255, 110, 167, 0.12);
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow:
+    0 0 10px hsl(var(--secondary)),
+    0 0 20px hsl(var(--secondary) / 0.5),
+    inset 0 0 8px rgba(255, 255, 255, 0.3);
+  transition: width 180ms ease, height 180ms ease, background 180ms ease, border-color 180ms ease;
+  will-change: transform;
+  animation: cursorPulse 2s ease-in-out infinite;
+}
+
+.custom-cursor-follower:hover {
+  width: 46px;
+  height: 46px;
+  background: rgba(255, 110, 167, 0.25);
+  border-color: #ffffff;
+  box-shadow:
+    0 0 16px #ffffff,
+    0 0 30px hsl(var(--secondary)),
+    0 0 50px hsl(var(--secondary) / 0.5),
+    inset 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Spinning inner ring */
+.cursor-inner-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  margin-top: -7px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  animation: cursorRingSpin 3s linear infinite;
+}
+
+/* Sparkle particles */
+.cursor-sparkle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  will-change: transform, opacity;
+}
+
+@keyframes cursorPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 8px hsl(var(--secondary)),
+      0 0 16px hsl(var(--secondary) / 0.5),
+      inset 0 0 6px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 14px hsl(var(--secondary)),
+      0 0 28px hsl(var(--secondary) / 0.5),
+      inset 0 0 10px rgba(255, 255, 255, 0.35);
+  }
+}
+
+@keyframes cursorRingSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .cursor-trail,
+  .custom-cursor-follower,
+  .cursor-sparkle {
+    display: none;
+  }
+}
