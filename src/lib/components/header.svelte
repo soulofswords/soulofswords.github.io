@@ -21,6 +21,18 @@
         </button>
     </h1>
     <div class="flex items-center justify-between w-full md:w-fit">
+        <a
+            href="https://soulofswords.github.io/Sakura-website/"
+            class="md:hidden mr-4 text-sm font-medium hover:text-secondary transition-colors"
+        >
+            Sakura
+        </a>
+        <a
+            href="https://soulofswords.github.io/Sakura-website/"
+            class="hidden md:block mr-4 text-sm font-medium hover:text-secondary transition-colors"
+        >
+            Sakura App
+        </a>
         <p class="text-sm md:text-base md:mr-8 hover:text-secondary fade-in">
             I am the collector of lost souls
         </p>

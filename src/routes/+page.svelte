@@ -40,13 +40,24 @@
                 class="sm:text-lg text-justify px-6 sm:max-w-4/5 lg:max-w-full"
             >
                 Once a lost soul in a crumbling city, I was saved by Baimeimo—a
-                magical, shapeshifting singer. But peace didn’t last: the Royal
-                Court’s curse trapped me in a sword, making me part legend, part
+                magical, shapeshifting singer. But peace didn't last: the Royal
+                Court's curse trapped me in a sword, making me part legend, part
                 weapon. Freed decades later by a daring royal, I gained the
                 power to shift forms for those who call upon me. My story is
                 shaped by music, magic, and the hope for freedom—an
                 ever-evolving tale waiting to be continued
             </p>
+            <a
+                href="https://soulofswords.github.io/Sakura-website/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-secondary text-secondary-foreground font-medium hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg"
+            >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+                Open Sakura App
+            </a>
         {/if}
     </article>
 </section>
