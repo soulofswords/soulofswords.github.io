@@ -187,21 +187,6 @@ body {
    ANIME-STYLE CUSTOM CURSOR
    ========================================================================== */
 
-/* Trail ghost cursor */
-.cursor-trail {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: 1.5px solid rgba(255, 110, 167, 0.35);
-  background: transparent;
-  pointer-events: none;
-  z-index: 9997;
-  will-change: transform;
-}
-
 /* Main cursor follower */
 .custom-cursor-follower {
   position: fixed;

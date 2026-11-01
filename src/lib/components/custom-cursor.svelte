@@ -4,8 +4,6 @@
 	let isVisible = $state(false);
 	let cursorX = $state(-100);
 	let cursorY = $state(-100);
-	let trailX = $state(-100);
-	let trailY = $state(-100);
 
 	// Sparkle particles
 	let particles = $state<
@@ -31,10 +29,6 @@
 	}
 
 	function updatePhysics() {
-		// Trail spring (laggy follow)
-		trailX = spring(trailX, cursorX, 20, 60);
-		trailY = spring(trailY, cursorY, 20, 60);
-
 		// Particle lifecycle - move and fade
 		particles = particles
 			.filter((p) => p.life > 0)
@@ -87,13 +81,6 @@
 </script>
 
 {#if isVisible}
-	<!-- Trailing after-image (laggy ghost) -->
-	<div
-		class="cursor-trail"
-		style="transform: translate3d({trailX - 9}px, {trailY - 9}px, 0)"
-		aria-hidden="true"
-	/>
-
 	<!-- Main cursor follower -->
 	<div
 		class="custom-cursor-follower"
@@ -114,20 +101,6 @@
 {/if}
 
 <style>
-	.cursor-trail {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 18px;
-		height: 18px;
-		border-radius: 50%;
-		border: 1.5px solid rgba(255, 110, 167, 0.35);
-		background: transparent;
-		pointer-events: none;
-		z-index: 9997;
-		will-change: transform;
-	}
-
 	.custom-cursor-follower {
 		position: fixed;
 		top: 0;
@@ -203,7 +176,6 @@
 	}
 
 	@media (pointer: coarse), (prefers-reduced-motion: reduce) {
-		.cursor-trail,
 		.custom-cursor-follower,
 		.cursor-sparkle {
 			display: none;
