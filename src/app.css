@@ -266,7 +266,6 @@ body {
 }
 
 @media (pointer: coarse), (prefers-reduced-motion: reduce) {
-  .cursor-trail,
   .custom-cursor-follower,
   .cursor-sparkle {
     display: none;
