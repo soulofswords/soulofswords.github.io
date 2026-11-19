@@ -1,0 +1,20 @@
+# Sakura
+
+> Sakura is an open-source, local-first AI character companion and VTuber studio for Windows, Android and macOS. It renders Live2D Cubism, PMX (MMD) and VRM characters, tracks face and body from a webcam or phone, speaks with on-device speech synthesis, and runs on a local LLM by default. An approval-based desktop agent handles computer tasks with explicit consent.
+
+## Canonical
+
+- Website: https://soulofswords.github.io/Sakura-website/
+- Source: https://github.com/soulofswords/Sakura
+- Unity client: https://github.com/soulofswords/Sakura-Unity
+- Downloads: https://github.com/soulofswords/Sakura-Downloads/releases
+
+## Facts
+
+- License: GPL-3.0.
+- Platforms: Windows 10/11 x64, Android 9+, macOS.
+- Character formats: Live2D Cubism, PMX/PMD, VRM 0.x/1.0.
+- AI: local GGUF model served by llama-server by default; Ollama import and an ordered cloud fallback are optional.
+- Voice: on-device text-to-speech and voice conversion; optional cloud speech.
+- Privacy: models, memory and conversation stay local unless a cloud feature is explicitly configured.
+- The desktop agent requires approval before actions; it is not autonomous purchasing or messaging.
